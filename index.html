@@ -4,6 +4,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
  <header class="flex justify-between gap-8 my-4 items-center">
@@ -29,12 +30,48 @@
                 <option selcted> ET</option>
                 <option value="FI">FI</option>
                 <option value="EN">EN</option>
-                
-            </select>     
+             </select>     
         </form>
-        <input type="weather"/>
-        <input type="search"/>
+        <div id="idd590e8a6d1863" a='{"t":"s","v":"1.2","lang":"en","locs":[618],"ssot":"c","sics":"ds","cbkg":"#FFFFFF00","cfnt":"#000000","slgp":2,"slis":10,"slpd":2,"slfs":16}'>Weather Data Source: <a href="https://sharpweather.com/weather_kuressaare/30_days/">30 days weather Kuressaare</a></div><script async src="https://static1.sharpweather.com/widgetjs/?id=idd590e8a6d1863"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <form class="example" action="action_page.php">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
     </div>
  </header>
+  <p class="font-bold text-4xl mt-36">Avasta Saaremaa</p><br>
+  <div class="text center gap-2 columns-2 text-black">
+    <nav class="">Saarte kenad uued kohad</nav>
+    <nav class="">Saaremaa ja väikesaared</nav>
+    <nav class="">Saarte maitsed</nav>
+    <nav class="">Kohalik soovitab selleks nädalaks</nav>
+    <nav class="">Saaremaa Terviseveed 200</nav>
+    <nav class="">Saarte sündmused</nav>
+  </div>
+  <footer class="felx justify-between gap-8 my-4 items-center">
+    <div class="flex gap-8 text-red-500 font-medium">
+        <nav class="">Info</nav>
+        <nav class="">Organisatsioon</nav>
+        <nav class="">Turismiinfo</nav>
+    </div>
+    <div class="flex my-auto">
+        <div class="flex flex-col text-front ">
+            <nav class="">Transport</nav>
+            <nav class="">Majutus Saaremaal</nav>
+            <nav class="">Meite maitsed</nav>
+            <nav class="">Saaremaa sündmused</nav>
+        </div>
+    <div class="flex my-auto">
+        <div class="flex flex-col text-front ">
+                <nav class="">Visit Saaremaa</nav>
+                <nav class="">Töötajad</nav>
+                <nav class="">Uudiskiri turismiprofessionaalile</nav>
+        </div>
+    <div class="flex my-auto">
+        <div class="flex flex-col text-front ">
+                <nav class="glyphicon glyphicon-map-marker"> Tallinna 2, Kuressaare</nav>
+                <nav class="glyphicon glyphicon-phone"> +372 45 33 120</nav>
+                <nav class="glyphicon glyphicon-envelope"> info@visitsaaremaa.ee</nav> 
+  </footer>
 </body>
 </html>
