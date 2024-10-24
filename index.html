@@ -5,9 +5,10 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <script src="https://cdn.tailwindcss.com"></script>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
- <header class="flex justify-between gap-8 my-4 items-center">
+<body class="flex flex-col min-h-screen flex-grow">
+ <header class="flex justify-between  gap-8 my-4 items-center">
     <img
     class="h-12 w-24"
     src=""
@@ -40,7 +41,7 @@
     </div>
  </header>
   <p class="font-bold text-4xl mt-36">Avasta Saaremaa</p><br>
-  <div class="text center gap-2 columns-2 text-black">
+  <div class="text center gap-2 columns-2 text-black flex-grow">
     <nav class="">Saarte kenad uued kohad</nav>
     <nav class="">Saaremaa ja väikesaared</nav>
     <nav class="">Saarte maitsed</nav>
@@ -48,30 +49,37 @@
     <nav class="">Saaremaa Terviseveed 200</nav>
     <nav class="">Saarte sündmused</nav>
   </div>
-  <footer class="felx justify-between gap-8 my-4 items-center">
-    <div class="flex gap-8 text-red-500 font-medium">
-        <nav class="">Info</nav>
-        <nav class="">Organisatsioon</nav>
-        <nav class="">Turismiinfo</nav>
+  <div class="flex-grow flex itmes-center justify-center">
+    <div class="space-x-4">
+        <button class="bg-blue-900 text-white text-3xl font-bold py-6 px-12 rounded text-left w-64"> <i class="fab fa-facebook-square"></i>  Facebook</button>
+        <button class="bg-blue-700 text-white text-3xl font-bold py-6 px-12 rounded text-left w-64"><i class="fab fa-instagram"></i> Instagram</button>
     </div>
-    <div class="flex my-auto">
-        <div class="flex flex-col text-front ">
-            <nav class="">Transport</nav>
-            <nav class="">Majutus Saaremaal</nav>
-            <nav class="">Meite maitsed</nav>
-            <nav class="">Saaremaa sündmused</nav>
+   </div>
+  <footer class="bg-gray-50 py-4 leading-6 mx-auto text-left">
+    <div class="text-left  font-medium container mx-auto grid grid-cols-1 md:grid-cols-6 gap-2 text-left">
+        <div>
+            <h5 class="font-bold mb-2 text-red-500">Info</h5>
+            <p class="mb-0">Transport</p><br>
+            <p class="mb-0">Majutus Saaremaal</p><br>
+            <p class="mb-0">Meite maitsed</p><br>
+            <p class="mb-0">Saaremaa sündmused</p><br>
+           
         </div>
-    <div class="flex my-auto">
-        <div class="flex flex-col text-front ">
-                <nav class="">Visit Saaremaa</nav>
-                <nav class="">Töötajad</nav>
-                <nav class="">Uudiskiri turismiprofessionaalile</nav>
+        <div>
+            <h5 class="font-bold mb-2 text-red-500">Organisatsioon</h5>
+            <p class="mb-0">Visit Saaremaa</p><br>
+            <p class="mb-0">Töötajad</p><br>
+            <p class="mb-0">Uudiskiri turismiprofessionaalile</p><br>
         </div>
-    <div class="flex my-auto">
-        <div class="flex flex-col text-front ">
-                <nav class="glyphicon glyphicon-map-marker"> Tallinna 2, Kuressaare</nav>
-                <nav class="glyphicon glyphicon-phone"> +372 45 33 120</nav>
-                <nav class="glyphicon glyphicon-envelope"> info@visitsaaremaa.ee</nav> 
+        <div>
+            <h5 class="font-bold mb-2 text-red-500">Turismiinfo</h5>
+            <nav class="glyphicon glyphicon-map-marker"> Tallinna 2, Kuressaare</nav> <br>
+            <nav class="glyphicon glyphicon-phone"> +372 45 33 120</nav> <br>
+            <nav class="glyphicon glyphicon-envelope"> info@visitsaaremaa.ee</nav> <br>
+        </div>
+        <div>
+            <img src="https://visitsaaremaa.ee/wp-content/uploads/2017/11/Turismiinfo-logo-viimane.jpg" alt="Turismiinfo" class=" mb-2 w-20 h-22">
+        </div>
   </footer>
 </body>
 </html>
