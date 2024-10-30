@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="flex flex-col min-h-screen flex-grow">
+<body class="flex flex-col min-h-screen flex-grow place-content-center" >
  <header class="flex justify-between gap-8 my-4  space-x-20 place-content-center max-w-4x3 mx-auto py-10 text-3xl">
     <img
     class="h-12 w-24"
@@ -125,10 +125,9 @@
         setupDropdown('dropdownButton4', 'dropdownMenu4');
         setupDropdown('dropdownButton5', 'dropdownMenu5');
     </script>  
-    
  </header>
   <p class="font-bold text-4xl mt-36">Avasta Saaremaa</p><br>
-  <div class="text center gap-2 columns-2 text-black flex-grow">
+  <div class="text center gap-2 columns-2 text-black flex-grow content-center">
     <nav class="">Saarte kenad uued kohad</nav>
     <nav class="">Saaremaa ja väikesaared</nav>
     <nav class="">Saarte maitsed</nav>
@@ -136,12 +135,31 @@
     <nav class="">Saaremaa Terviseveed 200</nav>
     <nav class="">Saarte sündmused</nav>
   </div>
+  <div class="relative object-center w-100 h-64">
+    <img src="https://www.biologicaldiversity.org/assets/img/species/taxa/SchoolingFish_WikimediaCommons_BrockenInaglory_BY-SA.jpg" alt="fish" class="w-200 h-400  object-cover rounded-lg justify-center">
+    <div class="absolute inset-0 bg-opacity-40 flex items-center justify-center rounded-lg">
+     <div class="text-center text-white px-4"> <br> <br> <br>
+        <p class="text-white-600">Sinu nimi</p>
+        <input placeholder="">
+        <p class="text-white-600">Sinu email</p>
+        <input placeholder=""> <br> <br>
+        <div class="flex items-center">
+        <input id="link-checkbox" type="checkbox" value="" class="w-6 h-6 text-white-600  border-gray-300 rounded focus:ring-white-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="link-checkbox" class="ms-2 text-lm font-medium text-center text-white-900 ">Olen tutvunud <a href="#" class="text-white-600 dark:text-blue-500 hover:underline">andmetöötlise põhimõtetega.</a>.</label>
+        </div>
+        <button class="bg-rose-600 py-2 px-4">Liitun uudiskirjaga</button> <br>
+        <p class="text-white-600 py-6">Uudiskirjast saad häid ideid ja vihjeid, kuidas planeerida oma järgmine saarepuhkus.<br>
+        Kirjutame, mida uut ja põnevat meitel on,mida siinsetel saatel teha ja läkitame teele meie ettevõtete parimad pakkumised</p>
+     </div>
+    </div>
+</div>
   <div class="flex-grow flex itmes-center justify-center">
     <div class="space-x-4">
         <button class="bg-blue-900 text-white text-3xl font-bold py-6 px-12 rounded text-left w-64"> <i class="fab fa-facebook-square"></i>  Facebook</button>
         <button class="bg-blue-700 text-white text-3xl font-bold py-6 px-12 rounded text-left w-64"><i class="fab fa-instagram"></i> Instagram</button>
     </div>
    </div>
+
   <footer class="bg-gray-50 py-4 leading-6 mx-auto text-left">
     <div class="text-left  font-medium container mx-auto grid grid-cols-1 md:grid-cols-6 gap-2 text-left">
         <div>
