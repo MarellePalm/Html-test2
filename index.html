@@ -10,16 +10,11 @@
 <body class="flex flex-col min-h-screen flex-grow place-content-center" >
  <header class="flex justify-between gap-8 my-4  space-x-20 place-content-center max-w-4x3 mx-auto py-10 text-3xl">
     <img
-    class="h-12 w-24"
-    src="main/water.png"
+    class="h-12 w-60"
+    src="images/VSlogo_black_transp.png"
     alt="waves"
     />
-    <div class="flex my-auto">
-        <div class="flex flex-col text-front ">
-            <nav class="">visit</nav>
-            <nav class="">saaremaa</nav>
-        </div>
-    </div>
+    
     <div class="flex gap-8 font-bold relative" >
         <button
         id="dropdownButton"
@@ -93,7 +88,7 @@
          </div>
     
         <form class="max-w-sm mx-auto">
-            <select id=" language" class="font-bold">
+            <select id=" language" class="font-bold py-4">
                 <option selected> ET</option>
                 <option value="FI">FI</option>
                 <option value="EN">EN</option>
@@ -102,7 +97,7 @@
         <div id="idd590e8a6d1863" a='{"t":"s","v":"1.2","lang":"en","locs":[618],"ssot":"c","sics":"ds","cbkg":"#FFFFFF00","cfnt":"#000000","slgp":2,"slis":10,"slpd":2,"slfs":16}'>Weather Data Source: <a href="https://sharpweather.com/weather_kuressaare/30_days/">30 days weather Kuressaare</a></div><script async src="https://static1.sharpweather.com/widgetjs/?id=idd590e8a6d1863"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <form class="example" action="action_page.php">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button type="submit" class="py-4"><i class="fa fa-search"></i></button>
             </form>
     </div>
     <script>
@@ -126,17 +121,24 @@
         setupDropdown('dropdownButton5', 'dropdownMenu5');
     </script>  
  </header>
-  <p class="font-bold text-4xl mt-36">Avasta Saaremaa</p><br>
+  <p class="font-bold text-8xl mt-36">Avasta Saaremaa</p><br>
   <div class="text center gap-2 columns-2 text-black flex-grow content-center">
-    <nav class="">Saarte kenad uued kohad</nav>
-    <nav class="">Saaremaa ja väikesaared</nav>
-    <nav class="">Saarte maitsed</nav>
-    <nav class="">Kohalik soovitab selleks nädalaks</nav>
-    <nav class="">Saaremaa Terviseveed 200</nav>
-    <nav class="">Saarte sündmused</nav>
-  </div>
-  <div class="relative object-center w-100 h-64">
-    <img src="https://www.biologicaldiversity.org/assets/img/species/taxa/SchoolingFish_WikimediaCommons_BrockenInaglory_BY-SA.jpg" alt="fish" class="w-200 h-400  object-cover rounded-lg justify-center">
+    <div class="">Saarte kenad uued kohad</div>
+    <dic class="">Saaremaa ja väikesaared</div>
+    <div class="">Saarte maitsed</div>
+    <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
+            <a href="#">
+                <img class="rounded-lg" src="images/10_WRC_Acropolis_AL__487-768x512.jpg" alt="ralli">
+            </a>
+            <figcaption class="absolute px-4 text-lg text-white font-bold bottom-6">
+                <p>Kohalik soovitab selleks nädalaks</p>
+            </figcaption>
+    </figure>
+    <div class="">Saarte sündmused</div>
+    <dic class="">Saaremaa Terviseveed 200</div>
+    </div>
+  <div class="relative oflex justify-center items-center w-100 h-90 ">
+    <img src="https://www.biologicaldiversity.org/assets/img/species/taxa/SchoolingFish_WikimediaCommons_BrockenInaglory_BY-SA.jpg" alt="fish" class="w-600 h-500 object-cover rounded-lg justify-center ">
     <div class="absolute inset-0 bg-opacity-40 flex items-center justify-center rounded-lg">
      <div class="text-center text-white px-4"> <br> <br> <br>
         <p class="text-white-600">Sinu nimi</p>
