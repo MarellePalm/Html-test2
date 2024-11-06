@@ -7,120 +7,118 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="flex flex-col min-h-screen flex-grow place-content-center" >
- <header class="flex justify-between gap-8 my-4  space-x-20 place-content-center max-w-4x3 mx-auto py-10 text-3xl">
-    <img
-    class="h-14 w-60"
-    src="images/VSlogo_black_transp.png"
-    alt="waves"
-    />
-    
-    <div class="flex gap-8 font-bold relative" >
-        <button
-        id="dropdownButton"
-        class=" hover:underline decoration-red-500">PLANEERI</button>
-         <div 
-         id="dropdownMenu"
-         class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden z-50 bg-opacity-80">
-            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4 ">Transport</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4 ">Majutus</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4 ">Söök</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4 ">Sündmused</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4 ">Giidid</a> <br>
+<header class="relative flex justify-between gap-8 my-4 space-x-20 place-content-center max-w-4x3 mx-auto py-10 text-3xl w-full h-[60vh] bg-cover bg-center" style="background-image: url('images/Saaremaa-sundmused-2021-header-scaled.jpg')">
+    <div class="fixed top-0 left-0 right-0 z-10 bg-white  flex justify-center  gap-8 py-4 px-10">
+     <div class=" ">
+        <img class="h-14 w-60" src="images/VSlogo_black_transp.png" alt="waves" />
+     </div>
+    <div class="flex justify-between gap-8 py-4 px-10">
+        <button id="dropdownButton" class="hover:underline decoration-red-500">PLANEERI</button>
+        <div id="dropdownMenu" class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden z-50 bg-opacity-80">
+            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4">Transport</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4">Majutus</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4">Söök</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4">Sündmused</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-100 p-4">Giidid</a><br>
         </div>
-        <button 
-        id="dropdownButton2"
-        class="hover:underline decoration-red-500">AVASTA</dbutton>
-        <div
-        id="dropdownMenu2"
-        class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden text-left z-50 bg-opacity-80">
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Saaremaa - roheline sihtkoht</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Atraktsioonid</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Saaremaa ja väikesaared</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Merelised tegevused Saaremaal</a> <br> <br>
+        
+        <button id="dropdownButton2" class="hover:underline decoration-red-500">AVASTA</button>
+        <div id="dropdownMenu2" class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden text-left z-50 bg-opacity-80">
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Saaremaa - roheline sihtkoht</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Atraktsioonid</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Saaremaa ja väikesaared</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Merelised tegevused Saaremaal</a><br><br>
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">UNESCO biosfääriala</a>
         </div>
-        <button
-        id="dropdownButton3"
-        class=" hover:underline decoration-red-500">NAUDI</button>
-         <div 
-         id="dropdownMenu3"
-         class=" left-1/2 transform -translate-x-1/2 rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden text-left z-50 bg-opacity-80">
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Spapuhkus</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Perepuhkus</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Loodusrajad</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Jalgrattaga Saaremaal ja Muhus</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Rannapuhkus</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Hülgevaatlus</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Linnuvaatlus</a> <br> <br>
-            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Ratsaretk</a> <br> <br>
+        
+        <button id="dropdownButton3" class="hover:underline decoration-red-500">NAUDI</button>
+        <div id="dropdownMenu3" class="left-1/2 transform -translate-x-1/2 rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden text-left z-50 bg-opacity-80">
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Spapuhkus</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Perepuhkus</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Loodusrajad</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Jalgrattaga Saaremaal ja Muhus</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Rannapuhkus</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Hülgevaatlus</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Linnuvaatlus</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Ratsaretk</a><br><br>
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Kalastamine</a>
-         </div>
+        </div>
+
         <button id="dropdownButton4" class="hover:underline decoration-red-500">VIIKINGITE SAAR</button>
-         <div
-            id="dropdownMenu4"
-            class=" absolute left-1/2 transform -translate-x-1/2 rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden z-50 bg-opacity-80">
-             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Viikingite saar</a> <br> <br>
-             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Viikingite elamused</a> <br> <br>
-             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Näitus "Viikingid enne viikingeid"</a> <br> <br>
-             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Kes on viikingid?</a> <br> <br>
-             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Salme lahing</a> <br> <br>
-             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Miks oli 2021 viikingiaasta?</a> <br> <br>
-             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Galerii</a> <br> <br>
-         </div>
+        <div id="dropdownMenu4" class="absolute left-1/2 transform -translate-x-1/2 rounded border-gray-500 bg-white p-8 top-[70px] w-[400px] hidden z-50 bg-opacity-80">
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Viikingite saar</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Viikingite elamused</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Näitus "Viikingid enne viikingeid"</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Kes on viikingid?</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Salme lahing</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Miks oli 2021 viikingiaasta?</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Galerii</a><br><br>
+        </div>
+
         <button id="dropdownButton5" class="hover:underline decoration-red-500">INFO</button>
-         <div 
-          id="dropdownMenu5"
-          class=" absolute left-1/2 transform -translate-x-1/2 rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden z-50 bg-opacity-80 ">
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Saaremaa Turismiinfokeskus</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Kaart</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Blogi</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Tarbijamärgis "Siin on turvaline"</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Galerii/video</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Trükised</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Meediakajastused</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Turismi parimad</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Ehtne Toode</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Uuringud/projektid</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Koolituse materjalid</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Visit Saaremaa</a> <br> <br>
-          <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Visit Saaremaa brändiraamat ja selle kasutus</a> <br> <br>
-         </div>
-    
+        <div id="dropdownMenu5" class="absolute left-1/2 transform -translate-x-1/2 rounded border-gray-500 bg-white p-8 top-[70px] w-[400px] hidden z-50 bg-opacity-80">
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Saaremaa Turismiinfokeskus</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Kaart</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Blogi</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Tarbijamärgis "Siin on turvaline"</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Galerii/video</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Trükised</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Meediakajastused</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Turismi parimad</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Ehtne Toode</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Uuringud/projektid</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Koolituse materjalid</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Visit Saaremaa</a><br><br>
+            <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Visit Saaremaa brändiraamat ja selle kasutus</a><br><br>
+        </div>
+
         <form class="max-w-sm mx-auto">
-            <select id=" language" class="font-bold py-4">
+            <select id="language" class="font-bold py-4">
                 <option value="FI">FI</option>
                 <option value="EN">EN</option>
-                <option selected> ET</option>
-             </select>     
+                <option selected>ET</option>
+            </select>
         </form>
-        <div id="idd590e8a6d1863" a='{"t":"s","v":"1.2","lang":"en","locs":[618],"ssot":"c","sics":"ds","cbkg":"#FFFFFF00","cfnt":"#000000","slgp":2,"slis":10,"slpd":2,"slfs":16}'>Weather Data Source: <a href="https://sharpweather.com/weather_kuressaare/30_days/">30 days weather Kuressaare</a></div><script async src="https://static1.sharpweather.com/widgetjs/?id=idd590e8a6d1863"></script>
+
+        <div id="idd590e8a6d1863" a='{"t":"s","v":"1.2","lang":"en","locs":[618],"ssot":"c","sics":"ds","cbkg":"#FFFFFF00","cfnt":"#000000","slgp":2,"slis":10,"slpd":2,"slfs":16}'>
+            Weather Data Source: <a href="https://sharpweather.com/weather_kuressaare/30_days/">30 days weather Kuressaare</a>
+        </div>
+        <script async src="https://static1.sharpweather.com/widgetjs/?id=idd590e8a6d1863"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <form class="example" action="action_page.php">
+        <form class="example" action="action_page.php">
             <button type="submit" class="py-4"><i class="fa fa-search"></i></button>
-            </form>
+        </form>
     </div>
-    <script>
-        function setupDropdown (buttonId, menuId) {
-       const button = document.getElementById(buttonId);
-       const menu = document.getElementById(menuId);
-       button.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-          });
-        
+</div>
+
+<header class="relative">
+    <div class="bg-cover bg-center bg-no-repeat" style="background-image: url('images/Saaremaa-sundmused-2021-header-scaled.jpg'); height: 400px;">
+    </div>
+</header>
+
+<script>
+    function setupDropdown(buttonId, menuId) {
+        const button = document.getElementById(buttonId);
+        const menu = document.getElementById(menuId);
+        button.addEventListener('click', (event) => {
+            event.stopPropagation();
+            menu.classList.toggle('hidden');
+        });
+
         document.addEventListener('click', (event) => {
-        if (!button.contains(event.target) && !menu.contains(event.target)) {
-          menu.classList.add('hidden');
-        }
-      });
-     }
-        setupDropdown('dropdownButton', 'dropdownMenu');
-        setupDropdown('dropdownButton2', 'dropdownMenu2');
-        setupDropdown('dropdownButton3', 'dropdownMenu3');
-        setupDropdown('dropdownButton4', 'dropdownMenu4');
-        setupDropdown('dropdownButton5', 'dropdownMenu5');
-    </script>  
- </header>
+            if (!button.contains(event.target) && !menu.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+    }
+
+    setupDropdown('dropdownButton', 'dropdownMenu');
+    setupDropdown('dropdownButton2', 'dropdownMenu2');
+    setupDropdown('dropdownButton3', 'dropdownMenu3');
+    setupDropdown('dropdownButton4', 'dropdownMenu4');
+    setupDropdown('dropdownButton5', 'dropdownMenu5');
+</script>
+</header>
  <div class=" px-80"> 
     <h1 class="font-bold  text-8xl mt-36">Avasta Saaremaa</h1>
  </div>
