@@ -18,10 +18,10 @@
     <div class="flex gap-8 font-bold relative" >
         <button
         id="dropdownButton"
-        class="">PLANEERI</button>
+        class=" hover:underline decoration-red-500">PLANEERI</button>
          <div 
          id="dropdownMenu"
-         class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] pb-8 hidden">
+         class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden z-50 bg-opacity-80">
             <a href="#" class="cursor-pointer hover:bg-gray-100 p-4 ">Transport</a> <br> <br>
             <a href="#" class="cursor-pointer hover:bg-gray-100 p-4 ">Majutus</a> <br> <br>
             <a href="#" class="cursor-pointer hover:bg-gray-100 p-4 ">Söök</a> <br> <br>
@@ -30,10 +30,10 @@
         </div>
         <button 
         id="dropdownButton2"
-        class="">AVASTA</dbutton>
+        class="hover:underline decoration-red-500">AVASTA</dbutton>
         <div
         id="dropdownMenu2"
-        class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden text-left">
+        class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden text-left z-50 bg-opacity-80">
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Saaremaa - roheline sihtkoht</a> <br> <br>
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Atraktsioonid</a> <br> <br>
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Saaremaa ja väikesaared</a> <br> <br>
@@ -42,10 +42,10 @@
         </div>
         <button
         id="dropdownButton3"
-        class="relative">NAUDI</button>
+        class=" hover:underline decoration-red-500">NAUDI</button>
          <div 
          id="dropdownMenu3"
-         class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden">
+         class=" left-1/2 transform -translate-x-1/2 rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden text-left z-50 bg-opacity-80">
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Spapuhkus</a> <br> <br>
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Perepuhkus</a> <br> <br>
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Loodusrajad</a> <br> <br>
@@ -56,10 +56,10 @@
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Ratsaretk</a> <br> <br>
             <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Kalastamine</a>
          </div>
-        <button id="dropdownButton4" class="">VIIKINGITE SAAR</button>
+        <button id="dropdownButton4" class="hover:underline decoration-red-500">VIIKINGITE SAAR</button>
          <div
             id="dropdownMenu4"
-            class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden">
+            class=" absolute left-1/2 transform -translate-x-1/2 rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden z-50 bg-opacity-80">
              <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Viikingite saar</a> <br> <br>
              <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Viikingite elamused</a> <br> <br>
              <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Näitus "Viikingid enne viikingeid"</a> <br> <br>
@@ -68,10 +68,10 @@
              <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Miks oli 2021 viikingiaasta?</a> <br> <br>
              <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Galerii</a> <br> <br>
          </div>
-        <button id="dropdownButton5" class="">INFO</button>
+        <button id="dropdownButton5" class="hover:underline decoration-red-500">INFO</button>
          <div 
           id="dropdownMenu5"
-          class="rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden ">
+          class=" absolute left-1/2 transform -translate-x-1/2 rounded border-gray-500 bg-white p-8 absolute top-[70px] w-[400px] hidden z-50 bg-opacity-80 ">
           <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Saaremaa Turismiinfokeskus</a> <br> <br>
           <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Kaart</a> <br> <br>
           <a href="#" class="cursor-pointer hover:bg-gray-300 p-4">Blogi</a> <br> <br>
@@ -100,9 +100,6 @@
             <button type="submit" class="py-4"><i class="fa fa-search"></i></button>
             </form>
     </div>
-     <div>
-        <img class="rounded-lg transition-all object-bottom" src="images/Saaremaa-sundmused-2021-header-scaled.jpg" alt="">
-     </div>
     <script>
         function setupDropdown (buttonId, menuId) {
        const button = document.getElementById(buttonId);
@@ -127,7 +124,7 @@
  <div class=" px-80"> 
     <h1 class="font-bold  text-8xl mt-36">Avasta Saaremaa</h1>
  </div>
-  <div class="text center gap-1 columns-2 px-80 py-20 text-black flex-grow content-center">
+  <div class="text center gap-1 columns-2 px-80 py-10 text-black flex-grow content-center">
     <figure class="relative max-w-4xl py-5 overflow-hidden rounded-md cursor-pointer">
         <a href="#">
             <img class="rounded-lg transition-all duration-500 hover:scale-110" src="images/hanso-oige.jpg" alt="hanso">
@@ -177,17 +174,17 @@
         </figcaption>
     </figure>
     </div>
-  <div class="flex justify-center items-center h-screen relative oflex overflow-hidden rounded-md cursor-pointer">
-    <img  style="filter: brightness(70%);" src="images/Liitu-visit-saaremaa-uudiskirjaga-scaled.jpg" alt="fish" class="w-[1200px] h-[400px]  grayscale-100 rounded-lg object-cover mx-auto"> 
+<div class="flex justify-center items-center relative  overflow-hidden rounded-md cursor-pointer">
+    <img  style="filter: brightness(70%);" src="images/Liitu-visit-saaremaa-uudiskirjaga-scaled.jpg" alt="fish" class="w-[1200px] h-[400px]  grayscale-100 rounded-lg object-cover mx-auto duration-500 hover:scale-110"> 
     <div class="absolute inset-0 bg-opacity-40 flex items-center justify-center rounded-lg">
      <div class="text-center text-white px-4"> <br> <br> <br>
-        <p class="text-white-600 font-bold">Sinu nimi</p>
-        <input placeholder="">
-        <p class="text-white-600 font-bold">Sinu email</p>
-        <input placeholder=""> <br> <br>
-        <div class="flex items-center"> 
-         <input id="link-checkbox" type="checkbox" value="" class=" flex-auto w-6 h-6 text-white-600  border-gray-300 rounded focus:ring-white-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-         <label for="link-checkbox" class="ms-2 text-lm font-medium text-center text-white-900 font-bold">Olen tutvunud <a href="#" class="text-white-600 font-bold dark:text-blue-500 hover:underline">andmetöötlise põhimõtetega.</a>.</label>
+        <p class="text-white-600 font-bold text-3xl ">Sinu nimi</p>
+        <input placeholder="" class=" w-[400px] border-gray-300 p-2 placeholder:text-3xl text-black">
+        <p class="text-white-600 font-bold text-3xl">Sinu email</p>
+        <input placeholder="" class="w-[400px] border-gray-300 placeholder:text-3xl p-2 text-black"> <br> <br>
+        <div class="flex items-center justify-center"> 
+         <input id="link-checkbox" type="checkbox" value="" class="w-6 h-6 text-white-600  border-gray-300 rounded focus:ring-white-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+         <label for="link-checkbox" class="ml-2 text-lg font-medium text-center text-white text-3xl font-bold">Olen tutvunud <a href="#" class="text-white-600  dark:text-blue-500 hover:underline">andmetöötlise põhimõtetega.</a>.</label>
         </div>
         <button class="bg-rose-600 py-2 px-4">Liitun uudiskirjaga</button> <br>
         <h2 class="text-white-600 font-bold text-left text-4xl">Liitu uudiskirjaga</h2>
@@ -196,37 +193,37 @@
      </div>
     </div>
 </div>
-  <div class="flex-grow flex space-x-4 items-center justify-center">
+  <div class="flex-grow flex   py-5 items-center justify-center">
     <div class="flex space-x-4">
-        <button class="bg-blue-900 text-white text-3xl font-bold py-6 px-10 rounded text-left w-96 "> <i class="fab fa-facebook-square"></i>  Facebook</button>
-        <button class="bg-blue-700 text-white text-3xl font-bold py-6 px-10 rounded text-left w-96"><i class="fab fa-instagram"></i> Instagram</button>
+        <button class="bg-blue-800 text-white text-3xl font-bold py-8 px-10 rounded text-left w-[600px] "> <i class="fab fa-facebook-square"></i>  Facebook</button>
+        <button class="bg-indigo-500 text-white text-3xl font-bold py-8 px-10 rounded text-left w-[600px]"><i class="fab fa-instagram"></i> Instagram</button>
     </div>
    </div>
 
-  <footer class="bg-gray-50 py-4 leading-6 mx-auto text-left">
-    <div class="text-left  font-medium container mx-auto grid grid-cols-1 md:grid-cols-6 gap-2 text-left">
+  <footer class="bg-gray-50 py-4 leading-2 mx-auto text-left">
+    <div class="font-medium container  grid grid-cols-1 md:grid-cols-6 gap-6 text-left">
         <div>
-            <h5 class="font-bold mb-2 text-red-500">Info</h5>
-            <p class="mb-0">Transport</p><br>
-            <p class="mb-0">Majutus Saaremaal</p><br>
-            <p class="mb-0">Meite maitsed</p><br>
-            <p class="mb-0">Saaremaa sündmused</p><br>
+            <h5 class="font-bold mb-2 text-red-500 py-8">Info</h5>
+            <p class="mb-0 hover:text-red-500">Transport</p><br>
+            <p class="mb-0 hover:text-red-500">Majutus Saaremaal</p><br>
+            <p class="mb-0 hover:text-red-500">Meite maitsed</p><br>
+            <p class="mb-0 hover:text-red-500">Saaremaa sündmused</p><br>
            
         </div>
         <div>
-            <h5 class="font-bold mb-2 text-red-500">Organisatsioon</h5>
-            <p class="mb-0">Visit Saaremaa</p><br>
-            <p class="mb-0">Töötajad</p><br>
-            <p class="mb-0">Uudiskiri turismiprofessionaalile</p><br>
+            <h5 class="font-bold mb-2 text-red-500 py-8">Organisatsioon</h5>
+            <p class="mb-0 hover:text-red-500">Visit Saaremaa</p><br>
+            <p class="mb-0 hover:text-red-500">Töötajad</p><br>
+            <p class="mb-0 hover:text-red-500">Uudiskiri turismiprofessionaalile</p><br>
         </div>
         <div>
-            <h5 class="font-bold mb-2 text-red-500">Turismiinfo</h5>
+            <h5 class="font-bold mb-2 text-red-500 py-8">Turismiinfo</h5>
             <nav class="glyphicon glyphicon-map-marker"> Tallinna 2, Kuressaare</nav> <br>
             <nav class="glyphicon glyphicon-phone"> +372 45 33 120</nav> <br>
             <nav class="glyphicon glyphicon-envelope"> info@visitsaaremaa.ee</nav> <br>
         </div>
         <div>
-            <img src="https://visitsaaremaa.ee/wp-content/uploads/2017/11/Turismiinfo-logo-viimane.jpg" alt="Turismiinfo" class=" mb-2 w-20 h-22">
+            <img src="https://visitsaaremaa.ee/wp-content/uploads/2017/11/Turismiinfo-logo-viimane.jpg" alt="Turismiinfo" class=" mb-2 w-[120px] h-[180px] py-8">
         </div>
   </footer>
 </body>
